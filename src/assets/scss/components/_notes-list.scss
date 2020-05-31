@@ -1,0 +1,82 @@
+.notes-list {
+  @extend %list;
+  @include letter-spacing(30);
+  line-height: 14px;
+  font-size: $secondary-font-size;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+  }
+}
+.notes-item {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: $background-blue-opacity-color;
+  box-shadow: $background-shadow;
+  @media screen and (min-width: 768px) {
+    width: 280px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 300px;
+  }
+}
+
+.item-title {
+  text-align: center;
+  font-size: 20px;
+  line-height: $primary-line-height;
+  margin-bottom: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.todos-list {
+  @extend %list;
+  cursor: pointer;
+}
+
+.todos-item {
+  display: flex;
+  line-height: 18px;
+  @media screen and (min-width: 768px) {
+    line-height: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: $primary-line-height;
+  }
+}
+.todos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.show-more-tasks {
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  @include letter-spacing(100);
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.on-empty-notes {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: $background-blue-opacity-color;
+  box-shadow: $background-shadow;
+}
+
+.on-empty-notes-link {
+  @include letter-spacing(30);
+  color: $primary-green-color;
+}

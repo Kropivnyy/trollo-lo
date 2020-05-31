@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  @include center-flex;
+  min-height: 64px;
+  padding: 10px 0;
+  background-color: $background-blue-color;
+  box-shadow: $background-shadow;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+.site-logo {
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  text-align: center;
+  color: $primary-white-color;
+  font-size: $primary-font-size * 2;
+  line-height: $primary-line-height * 2;
+  cursor: default;
+}

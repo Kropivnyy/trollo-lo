@@ -1,0 +1,64 @@
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.todos-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark,
+.edit-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  box-shadow: $primary-box-shadow;
+}
+
+.checkbox-label:hover .todos-checkbox ~ .edit-checkmark {
+  background-color: #cccccc;
+}
+
+.checkbox-label .todos-checkbox:checked ~ .checkmark,
+.checkbox-label .todos-checkbox:checked ~ .edit-checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark::after,
+.edit-checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label .todos-checkbox:checked ~ .checkmark:after,
+.checkbox-label .todos-checkbox:checked ~ .edit-checkmark::after {
+  display: block;
+}
+
+.checkbox-label .checkmark:after,
+.checkbox-label .edit-checkmark::after {
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 13px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
