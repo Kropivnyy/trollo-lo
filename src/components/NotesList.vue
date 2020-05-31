@@ -9,7 +9,7 @@
           @click.prevent="deleteCurrentNote(note)"
         >
           <svg class="delete-button-icon">
-            <use href="/img/sprite.svg#icon-delete"></use>
+            <use href="/trollo-lo/img/sprite.svg#icon-delete"></use>
           </svg>
         </button>
         <button
@@ -19,7 +19,7 @@
           @click.prevent="editNote(note.noteId)"
         >
           <svg class="edit-button-icon">
-            <use href="/img/sprite.svg#icon-edit"></use>
+            <use href="/trollo-lo/img/sprite.svg#icon-edit"></use>
           </svg>
         </button>
       </div>

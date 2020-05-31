@@ -9,7 +9,7 @@
         @click.prevent="undoEdit"
       >
         <svg class="undo-button-icon">
-          <use href="/img/sprite.svg#icon-undo"></use>
+          <use href="/trollo-lo/img/sprite.svg#icon-undo"></use>
         </svg>
       </button>
       <button
@@ -21,7 +21,7 @@
         @click.prevent="undoEdit"
       >
         <svg class="undo-button-icon">
-          <use href="/img/sprite.svg#icon-undo"></use>
+          <use href="/trollo-lo/img/sprite.svg#icon-undo"></use>
         </svg>
       </button>
       <button
@@ -32,7 +32,7 @@
         @click.prevent="redoEdit"
       >
         <svg class="repeat-button-icon">
-          <use href="/img/sprite.svg#icon-undo"></use>
+          <use href="/trollo-lo/img/sprite.svg#icon-undo"></use>
         </svg>
       </button>
       <button
@@ -44,7 +44,7 @@
         @click.prevent="redoEdit"
       >
         <svg class="repeat-button-icon">
-          <use href="/img/sprite.svg#icon-undo"></use>
+          <use href="/trollo-lo/img/sprite.svg#icon-undo"></use>
         </svg>
       </button>
     </div>
@@ -55,7 +55,7 @@
       @click.prevent="deleteCurrentNote(note.title)"
     >
       <svg class="delete-button-icon">
-        <use href="/img/sprite.svg#icon-delete"></use>
+        <use href="/trollo-lo/img/sprite.svg#icon-delete"></use>
       </svg>
     </button>
   </div>
