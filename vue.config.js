@@ -1,3 +1,4 @@
 module.exports = {
-  lintOnSave: false
+  publicPath: '/trollo-lo/',
+  lintOnSave: false,
 };
